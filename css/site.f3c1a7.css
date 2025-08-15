@@ -1,0 +1,22 @@
+/* Hashed build of modern-style.css (trimmed) + watermark for demo mode */
+@import url('modern-style.css');
+
+/* Watermark overlay when body has class demo-watermark */
+body.demo-watermark::after {
+  content: 'DEMO VERSION • NOT FOR DISTRIBUTION';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: clamp(2rem, 8vw, 6rem);
+  color: rgba(0,0,0,0.06);
+  z-index: 5000;
+  pointer-events: none;
+  white-space: nowrap;
+  font-weight: 700;
+  letter-spacing: .15em;
+  mix-blend-mode: multiply;
+}
+
+/* Slight code obfuscation hint (rename some utility aliases) */
+.xc-a{display:flex;align-items:center;justify-content:center}
