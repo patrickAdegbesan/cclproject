@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <!-- Styles -->
   <link href="css/modern-style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/responsive-fix.css" rel="stylesheet" type="text/css" media="all" />
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -40,11 +41,25 @@
   <!-- Hero Section with Slider -->
   <section class="slider">
     <div class="hero-content">
-      <h1>Innovative Engineering. Reliable Solutions.</h1>
-      <p>Your trusted partner for cutting-edge technical solutions, quality service, and long-term support</p>
+      <h1>Engineering Excellence for a Modern World</h1>
+      <p>Cedarside Concept Limited provides comprehensive electrical systems, fire safety solutions, and telecommunications infrastructure for commercial, industrial, and institutional clients across Nigeria.</p>
       <div class="hero-buttons">
-        <a href="about.html" class="btn">Learn More</a>
-        <a href="contact.html" class="btn btn-outline">Get Quote</a>
+        <a href="services.html" class="btn">Our Services</a>
+        <a href="contact.html" class="btn btn-outline">Request Consultation</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Support</span>
+        </div>
       </div>
     </div>
     <!-- Slideshow Background Images -->
@@ -70,24 +85,45 @@
   <section class="why-choose section">
     <div class="container">
       <div class="text-center mb-4">
-        <h2>Why Choose Us</h2>
-        <p class="lead">Proven track record, certified expertise, and unwavering commitment to your success.</p>
+        <h2>Why Choose Cedarside Concept</h2>
+        <p class="lead">We deliver engineering excellence through technical expertise, innovative solutions, and unwavering commitment to client success.</p>
       </div>
       <div class="grid grid-3">
         <div class="feature-card">
-          <i class="fas fa-award fa-3x"></i>
+          <div class="feature-icon">
+            <i class="fas fa-award"></i>
+          </div>
           <h4>Industry Recognition</h4>
-          <p>Award-winning solutions recognized by peers and clients alike.</p>
+          <p>Award-winning solutions recognized by industry peers and satisfied clients across Nigeria.</p>
+          <ul class="feature-list">
+            <li>ISO 9001:2015 Certified</li>
+            <li>NFPA Certified Professionals</li>
+            <li>Multiple Industry Awards</li>
+          </ul>
         </div>
         <div class="feature-card">
-          <i class="fas fa-cogs fa-3x"></i>
+          <div class="feature-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
           <h4>Technical Expertise</h4>
-          <p>Our team holds certifications in ISO, NFPA, and other industry standards.</p>
+          <p>Our team combines extensive experience with cutting-edge technology to deliver superior engineering solutions.</p>
+          <ul class="feature-list">
+            <li>15+ Years Industry Experience</li>
+            <li>500+ Completed Projects</li>
+            <li>Specialized Technical Teams</li>
+          </ul>
         </div>
         <div class="feature-card">
-          <i class="fas fa-headset fa-3x"></i>
+          <div class="feature-icon">
+            <i class="fas fa-headset"></i>
+          </div>
           <h4>Dedicated Support</h4>
-          <p>24/7 technical support and maintenance services to keep your operations running smoothly.</p>
+          <p>24/7 technical support and maintenance services to ensure your operations run smoothly at all times.</p>
+          <ul class="feature-list">
+            <li>24/7 Emergency Response</li>
+            <li>Regular Maintenance Plans</li>
+            <li>Remote Monitoring Capabilities</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -235,31 +271,44 @@
     <!-- Team Gallery Section -->
     <section class="section">
         <div class="container">
-            <div class="text-center mb-4">
-                <h2>Our Professional Team</h2>
-                <p class="lead">Experienced engineers dedicated to excellence</p>
-            </div>
             
-            <div class="grid grid-4">
-                <div class="team-card">
-                    <i class="fas fa-user-circle default-profile-icon" aria-hidden="true"></i>
-                    <h4>John Smith</h4>
-                    <p>Managing Director</p>
+            <div class="project-slideshow">
+                <div class="slide-container">
+                    <div class="slide active">
+                        <img src="img/project1.jpg" alt="Electrical Systems Project" class="img-responsive">
+                        <div class="slide-caption">
+                            <h4>Electrical Systems</h4>
+                            <p>Advanced power distribution and control systems installation</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/project2.jpg" alt="Fire Safety Systems Project" class="img-responsive">
+                        <div class="slide-caption">
+                            <h4>Fire Safety Systems</h4>
+                            <p>Comprehensive fire detection and suppression solutions</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/project3.jpg" alt="Telecommunications Project" class="img-responsive">
+                        <div class="slide-caption">
+                            <h4>Telecommunications</h4>
+                            <p>Modern network infrastructure and communication systems</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="team-card">
-                    <i class="fas fa-user-circle default-profile-icon" aria-hidden="true"></i>
-                    <h4>Alice Davis</h4>
-                    <p>Technical Lead</p>
-                </div>
-                <div class="team-card">
-                    <i class="fas fa-user-circle default-profile-icon" aria-hidden="true"></i>
-                    <h4>Michael King</h4>
-                    <p>Project Manager</p>
-                </div>
-                <div class="team-card">
-                    <i class="fas fa-user-circle default-profile-icon" aria-hidden="true"></i>
-                    <h4>Laura Scott</h4>
-                    <p>Quality Assurance</p>
+                
+                <div class="slideshow-controls">
+                    <button class="prev-slide" aria-label="Previous slide">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slide-indicators">
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                    </div>
+                    <button class="next-slide" aria-label="Next slide">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -350,21 +399,50 @@
   }
   setInterval(nextSlide, 5000);
   
-  // Testimonials manual controls
-  (function($) {
-      $('.testimonial-next').on('click', function() {
-          var $active = $('.testimonial-slide.active');
-          var $next = $active.next('.testimonial-slide');
-          if (!$next.length) $next = $('.testimonial-slide').first();
-          $active.removeClass('active');
-          $next.addClass('active');
+
+  
+  // Project slideshow functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.slide');
+    const indicators = document.querySelectorAll('.indicator');
+    const prevBtn = document.querySelector('.prev-slide');
+    const nextBtn = document.querySelector('.next-slide');
+    let currentSlide = 0;
+    
+    function showSlide(index) {
+      // Hide all slides
+      slides.forEach(slide => slide.classList.remove('active'));
+      indicators.forEach(indicator => indicator.classList.remove('active'));
+      
+      // Show current slide
+      slides[index].classList.add('active');
+      indicators[index].classList.add('active');
+      currentSlide = index;
+    }
+    
+    // Previous slide
+    prevBtn.addEventListener('click', function() {
+      const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(prevIndex);
+    });
+    
+    // Next slide
+    nextBtn.addEventListener('click', function() {
+      const nextIndex = (currentSlide + 1) % slides.length;
+      showSlide(nextIndex);
+    });
+    
+    // Indicator click
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', function() {
+        showSlide(index);
       });
-      $('.testimonial-prev').on('click', function() {
-          var $active = $('.testimonial-slide.active');
-          var $prev = $active.prev('.testimonial-slide');
-          if (!$prev.length) $prev = $('.testimonial-slide').last();
-          $active.removeClass('active');
-          $prev.addClass('active');
-      });
-  })(jQuery);
+    });
+    
+    // Auto-advance slideshow
+    setInterval(function() {
+      const nextIndex = (currentSlide + 1) % slides.length;
+      showSlide(nextIndex);
+    }, 5000);
+  });
   </script>

@@ -26,6 +26,13 @@ $(function () {
     }
   });
 
+  // Close menu when clicking outside
+  $(document).on('click', function(event) {
+    if (!$(event.target).closest('.top-nav').length && !$(event.target).closest('.menu').length) {
+      $('.top-nav ul').removeClass('show');
+    }
+  });
+
   // Pattern 2: Optional .nav-toggle / .nav-menu support
   $(document).on('click', '.nav-toggle', function (e) {
     e.preventDefault();
