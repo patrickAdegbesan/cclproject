@@ -12,6 +12,20 @@
   <link href="css/modern-style.css" rel="stylesheet" type="text/css" media="all" />
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <!-- Canonical & Social Meta -->
+  <link rel="canonical" href="https://www.cedarsideltd.com/experience.html" />
+  <meta property="og:title" content="Our Experience & Capability | Cedarside Concept Limited" />
+  <meta property="og:description" content="Decades of multi‑disciplinary engineering, safety, power and telecom solutions delivered with excellence." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.cedarsideltd.com/experience.html" />
+  <meta property="og:image" content="https://www.cedarsideltd.com/img/hear2.png" />
+  <meta property="og:site_name" content="Cedarside Concept Limited" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Our Experience & Capability | Cedarside Concept Limited" />
+  <meta name="twitter:description" content="Decades of multi‑disciplinary engineering, safety, power and telecom solutions delivered with excellence." />
+  <meta name="twitter:image" content="https://www.cedarsideltd.com/img/hear2.png" />
 </head>
 <body>
   <script>document.documentElement.classList.add('js');</script>
@@ -37,11 +51,13 @@
     </div>
   </header>
 
-  <!-- Page Header -->
-  <section class="page-header">
+  <!-- Page Header (Unified Gradient Hero) -->
+  <section class="section sector-hero">
     <div class="container">
-      <h1>Our Experience & Capability</h1>
-      <p>Decades of multi‑disciplinary engineering, safety, power and telecom solutions delivered with excellence.</p>
+      <div class="text-center mb-3">
+        <h1>Our Experience & Capability</h1>
+        <p class="lead">Decades of multi‑disciplinary engineering, safety, power and telecom solutions delivered with excellence.</p>
+      </div>
     </div>
   </section>
 
@@ -98,25 +114,50 @@
     <section class="section">
       <div class="container">
         <div class="text-center mb-4">
-          <h2>Professional Excellence</h2>
-          <p class="lead">A multidisciplinary team delivering quality & reliability.</p>
+          <h2>Team Gallery & Recent Projects</h2>
+          <p class="lead">A glimpse of our engineers at work across electrical, fire safety and telecom projects.</p>
         </div>
-        <div class="grid grid-4">
-          <div class="team-card">
-            <img src="https://via.placeholder.com/300x300/667eea/ffffff?text=Project+Manager" alt="Project Management" class="img-responsive" />
-            <div class="team-overlay"><h4>Project Management</h4><p>Coordinating complex engagements</p></div>
-          </div>
-          <div class="team-card">
-            <img src="https://via.placeholder.com/300x300/764ba2/ffffff?text=Engineering" alt="Senior Engineering" class="img-responsive" />
-            <div class="team-overlay"><h4>Engineering</h4><p>Design & implementation expertise</p></div>
-          </div>
-          <div class="team-card">
-            <img src="https://via.placeholder.com/300x300/f093fb/ffffff?text=QA" alt="Quality Assurance" class="img-responsive" />
-            <div class="team-overlay"><h4>Quality Assurance</h4><p>Process & compliance focus</p></div>
-          </div>
-          <div class="team-card">
-            <img src="https://via.placeholder.com/300x300/4facfe/ffffff?text=Support" alt="Technical Support" class="img-responsive" />
-            <div class="team-overlay"><h4>Technical Support</h4><p>Lifecycle operations & support</p></div>
+
+        <div class="project-slideshow" aria-label="Project slideshow" role="region">
+          <div class="slide-container">
+            <div class="slide active" style="background-image: url('img/img1.webp'); background-position: center; background-size: cover; background-repeat: no-repeat; max-height: 600px;" role="group" aria-roledescription="slide" aria-label="Electrical Systems">
+              <div class="slide-caption">
+                <div class="caption-box">
+                  <h4>Electrical Systems</h4>
+                  <p>Advanced power distribution and control systems installation for commercial and industrial facilities.</p>
+                  <a href="services.html#electrical" class="btn btn-small">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="slide" style="background-image: url('img/fr_img.png'); background-position: center; background-size: cover; background-repeat: no-repeat; max-height: 600px;" role="group" aria-roledescription="slide" aria-label="Fire Safety Systems">
+              <div class="slide-caption" >
+                <div class="caption-box">
+                  <h4>Fire Safety Systems</h4>
+                  <p>Comprehensive fire detection and suppression solutions ensuring safety compliance and peace of mind.</p>
+                  <a href="services.html#fire-safety" class="btn btn-small">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="slide" style="background-image: url('img/tel.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; max-height: 600px;" role="group" aria-roledescription="slide" aria-label="Telecommunications">
+              <div class="slide-caption">
+                <div class="caption-box">
+                  <h4>Telecommunications</h4>
+                  <p>Modern network infrastructure and communication systems designed for optimal connectivity.</p>
+                  <a href="services.html#telecom" class="btn btn-small">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <button class="prev-slide" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+            <button class="next-slide" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+
+            <!-- Indicators -->
+            <div class="slide-indicators" role="tablist" aria-label="Slide indicators">
+              <span class="indicator active" role="tab" aria-selected="true" aria-label="Slide 1"></span>
+              <span class="indicator" role="tab" aria-selected="false" aria-label="Slide 2"></span>
+              <span class="indicator" role="tab" aria-selected="false" aria-label="Slide 3"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -208,6 +249,61 @@
     };
     window.addEventListener('scroll', reveal, { passive:true });
     reveal();
+  });
+  </script>
+  <script>
+  // Project slideshow functionality (scoped to the project-slideshow only)
+  document.addEventListener('DOMContentLoaded', function() {
+    const slideshow = document.querySelector('.project-slideshow');
+    if (!slideshow) return;
+
+    const slides = slideshow.querySelectorAll('.slide');
+    const indicators = slideshow.querySelectorAll('.indicator');
+    const prevBtn = slideshow.querySelector('.prev-slide');
+    const nextBtn = slideshow.querySelector('.next-slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      indicators.forEach((indicator, i) => {
+        indicator.classList.toggle('active', i === index);
+        indicator.setAttribute('aria-selected', i === index ? 'true' : 'false');
+      });
+      slides[index].classList.add('active');
+      currentSlide = index;
+    }
+
+    if (prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', function() {
+        const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(prevIndex);
+      });
+
+      nextBtn.addEventListener('click', function() {
+        const nextIndex = (currentSlide + 1) % slides.length;
+        showSlide(nextIndex);
+      });
+    }
+
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', function() {
+        showSlide(index);
+      });
+    });
+
+    // Auto-advance slideshow with pause on hover
+    let autoTimer = setInterval(() => {
+      const nextIndex = (currentSlide + 1) % slides.length;
+      showSlide(nextIndex);
+    }, 5000);
+
+    slideshow.addEventListener('mouseenter', () => clearInterval(autoTimer));
+    slideshow.addEventListener('mouseleave', () => {
+      autoTimer = setInterval(() => {
+        const nextIndex = (currentSlide + 1) % slides.length;
+        showSlide(nextIndex);
+      }, 5000);
+    });
   });
   </script>
 </body>

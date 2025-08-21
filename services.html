@@ -12,6 +12,68 @@
   <link href="css/modern-style.css" rel="stylesheet" type="text/css" media="all" />
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Cedarside Concept Limited",
+    "email": "contact@cedarsideltd.com",
+    "telephone": "+2348166373114",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Plot 61 Airport Road",
+      "addressLocality": "Warri",
+      "addressRegion": "Delta State",
+      "addressCountry": "NG"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: Service (page) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Engineering Services",
+    "serviceType": "Electrical Systems, Fire & Safety, Telecommunications",
+    "provider": {
+      "@type": "Organization",
+      "name": "Cedarside Concept Limited"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Nigeria"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cedarsideltd.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.cedarsideltd.com/services.html"}
+    ]
+  }
+  </script>
+  
+  <!-- Canonical & Social Meta -->
+  <link rel="canonical" href="https://www.cedarsideltd.com/services.html" />
+  <meta property="og:title" content="Services | Cedarside Concept Limited" />
+  <meta property="og:description" content="Cedarside Concept Limited - Engineering and technical solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.cedarsideltd.com/services.html" />
+  <meta property="og:image" content="https://www.cedarsideltd.com/img/hear2.png" />
+  <meta property="og:site_name" content="Cedarside Concept Limited" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Services | Cedarside Concept Limited" />
+  <meta name="twitter:description" content="Cedarside Concept Limited - Engineering and technical solutions." />
+  <meta name="twitter:image" content="https://www.cedarsideltd.com/img/hear2.png" />
 </head>
 <body>
   <script>document.documentElement.classList.add('js');</script>
@@ -89,115 +151,187 @@
       </div>
     </section>
 
-    <!-- Main Services -->
+    <!-- Solutions by Sector -->
     <section class="section" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
       <div class="container">
         <div class="text-center mb-4">
-          <h2>Our Core Operations</h2>
-          <p class="lead">Our operations span the following major areas</p>
+          <h2>Solutions by Sector</h2>
+          <p class="lead">Targeted solution bundles for Banks and Distribution Companies</p>
         </div>
         
-        <div class="grid grid-3">
-          <!-- Electrical Services -->
-          <div class="card">
-            <div class="card-header">
-              <i class="fas fa-bolt service-card-icon"></i>
-              <h4>Electrical & Power Systems</h4>
-            </div>
-            <ul class="service-list">
-              <li><i class="fas fa-check"></i> Electrical/Power Distribution, installations and maintenance services</li>
-              <li><i class="fas fa-check"></i> Electrical Protection, Management and Control</li>
-              <li><i class="fas fa-check"></i> Surge Protective Devices (SPDs/TVSS) Installations</li>
-              <li><i class="fas fa-check"></i> Power Quality Auditing and Management</li>
-              <li><i class="fas fa-check"></i> Earth Leakage Correction</li>
-              <li><i class="fas fa-check"></i> Earthing (Grounding)/Lightning Protection installations and upgrade</li>
-            </ul>
+        <!-- Banks Solutions -->
+        <div class="mb-3">
+          <div class="text-left mb-2">
+            <span class="kpi-badge"><i class="fas fa-building"></i> Banks</span>
           </div>
-
-          <!-- Fire & Safety Services -->
-          <div class="card">
-            <div class="card-header">
-              <i class="fas fa-fire-extinguisher service-card-icon"></i>
-              <h4>Fire Detection & Safety</h4>
+          <div class="grid grid-3">
+            <div class="card">
+              <h3>Branch Power Reliability Pack</h3>
+              <p>Design, implement, and maintain resilient branch power with UPS, ATS logic, and PQ mitigation.</p>
+              <ul class="feature-list">
+                <li>Site audit, SLD and UPS sizing</li>
+                <li>Battery autonomy and generator interface</li>
+                <li>Harmonics and PQ correction</li>
+              </ul>
+              <div class="mt-2">
+                <span class="kpi-badge">≥99.95% uptime</span>
+                <span class="kpi-badge">Reduced outages</span>
+              </div>
+              <div class="text-center mt-3">
+                <a class="btn btn-small" href="contact.html?subject=Branch%20Reliability%20Pack&source=services">Get Proposal</a>
+                <a class="btn btn-outline btn-small" href="banks.html">Explore Banks</a>
+              </div>
             </div>
-            <ul class="service-list">
-              <li><i class="fas fa-check"></i> Fire Detection, Alarms maintenance and installations</li>
-              <li><i class="fas fa-check"></i> Gas Detection/Monitors and Calibration Systems</li>
-              <li><i class="fas fa-check"></i> Air Conditioner Maintenance and Installations</li>
-              <li><i class="fas fa-check"></i> Procurements and Supplies Chain Services</li>
-            </ul>
+            
+            <div class="card">
+              <h3>Data Room Power (Tier-aligned)</h3>
+              <p>Redundant power paths, monitoring and coordination for server rooms and data hubs.</p>
+              <ul class="feature-list">
+                <li>Dual feeds, ATS/AMF design</li>
+                <li>Rack PDUs, thermal and leak sensors</li>
+                <li>Generator–UPS coordination study</li>
+              </ul>
+              <div class="mt-2">
+                <span class="kpi-badge">N+1 Resilience</span>
+                <span class="kpi-badge">Continuous monitoring</span>
+              </div>
+              <div class="text-center mt-3">
+                <a class="btn btn-small" href="contact.html?subject=Data%20Room%20Power&source=services">Discuss Design</a>
+                <a class="btn btn-outline btn-small" href="banks.html#data-room">Details</a>
+              </div>
+            </div>
+            
+            <div class="card">
+              <h3>ATM Uptime & Remote Monitoring</h3>
+              <p>Power quality, clean transitions and telemetry for ATM locations to maximize uptime.</p>
+              <ul class="feature-list">
+                <li>Power conditioning and surge protection</li>
+                <li>Battery health checks and swap plans</li>
+                <li>Remote monitoring and alerts</li>
+              </ul>
+              <div class="mt-2">
+                <span class="kpi-badge">Less downtime</span>
+                <span class="kpi-badge">Better CX</span>
+              </div>
+              <div class="text-center mt-3">
+                <a class="btn btn-small" href="contact.html?subject=ATM%20Uptime&source=services">Request Quote</a>
+                <a class="btn btn-outline btn-small" href="banks.html#atm-uptime">Learn more</a>
+              </div>
+            </div>
           </div>
-
-          <!-- Telecommunications Services -->
-          <div class="card">
-            <div class="card-header">
-              <i class="fas fa-satellite-dish service-card-icon"></i>
-              <h4>Telecommunications & Data</h4>
+        </div>
+        
+        <!-- DisCos Solutions -->
+        <div>
+          <div class="text-left mb-2">
+            <span class="kpi-badge"><i class="fas fa-bolt"></i> Distribution Companies</span>
+          </div>
+          <div class="grid grid-3">
+            <div class="card">
+              <h3>Feeder–DT–Customer Metering</h3>
+              <p>Close the energy balance with metering at critical nodes for visibility and loss reduction.</p>
+              <ul class="feature-list">
+                <li>Feeder/DT boundary meters</li>
+                <li>Customer segmentation and audits</li>
+                <li>Analytics for ATC&C loss hotspots</li>
+              </ul>
+              <div class="mt-2">
+                <span class="kpi-badge">Accuracy ↑</span>
+                <span class="kpi-badge">Losses ↓</span>
+              </div>
+              <div class="text-center mt-3">
+                <a class="btn btn-small" href="contact.html?subject=Feeder–DT–Customer%20Metering&source=services">Start Pilot</a>
+                <a class="btn btn-outline btn-small" href="discos.html">Explore DisCos</a>
+              </div>
             </div>
-            <ul class="service-list">
-              <li><i class="fas fa-check"></i> Data Management and Telecommunications integration solutions</li>
-              <li><i class="fas fa-check"></i> Communications Antenna and Out Door Unit Installations</li>
-              <li><i class="fas fa-check"></i> Mast/Tower Erection, Maintenance and Aviation Lights</li>
-              <li><i class="fas fa-check"></i> Fibre Installation and Termination Services</li>
-              <li><i class="fas fa-check"></i> Structured Office Cabling (LAN, WAN, Internet Connections)</li>
-            </ul>
+            
+            <div class="card">
+              <h3>Protection Coordination & DA</h3>
+              <p>Improve SAIDI/SAIFI with coordination studies, sectionalizing and automation for fault isolation.</p>
+              <ul class="feature-list">
+                <li>Relay/RCF settings and studies</li>
+                <li>Sectionalizers, reclosers, LBS</li>
+                <li>Outage analytics and reporting</li>
+              </ul>
+              <div class="mt-2">
+                <span class="kpi-badge">SAIDI ↓</span>
+                <span class="kpi-badge">SAIFI ↓</span>
+              </div>
+              <div class="text-center mt-3">
+                <a class="btn btn-small" href="contact.html?subject=Protection%20Coordination%20%26%20DA&source=services">Discuss Program</a>
+                <a class="btn btn-outline btn-small" href="discos.html#protection-da">Details</a>
+              </div>
+            </div>
+            
+            <div class="card">
+              <h3>Network Rehab & Loss Reduction</h3>
+              <p>Rehabilitate feeders, balance phases and regularize connections to improve performance.</p>
+              <ul class="feature-list">
+                <li>Feeder audits and refurb plans</li>
+                <li>Phase balancing and grounding</li>
+                <li>Illegal connection cleanup</li>
+              </ul>
+              <div class="mt-2">
+                <span class="kpi-badge">Losses ↓</span>
+                <span class="kpi-badge">Reliability ↑</span>
+              </div>
+              <div class="text-center mt-3">
+                <a class="btn btn-small" href="contact.html?subject=Network%20Rehab%20%26%20Loss%20Reduction&source=services">Request Scope</a>
+                <a class="btn btn-outline btn-small" href="discos.html#network-rehab">Learn more</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Service Gallery -->
+    <!-- Team Gallery Section -->
     <section class="section">
       <div class="container">
         <div class="text-center mb-4">
-          <h2>Our Work in Action</h2>
-          <p class="lead">See how we deliver excellence in our engineering projects</p>
+          <h2>Team Gallery & Recent Projects</h2>
+          <p class="lead">A glimpse of our engineers at work across electrical, fire safety and telecom projects.</p>
         </div>
-        
-        <div class="grid grid-3">
-          <div class="project-card">
-            <img src="https://via.placeholder.com/400x300/667eea/ffffff?text=Electrical+Installation" 
-                 alt="Electrical Installation" class="img-responsive zoom-img">
-            <div class="project-overlay">
-              <h4>Electrical Systems</h4>
-              <p>Professional electrical installations and power distribution</p>
+
+        <div class="project-slideshow" aria-label="Project slideshow" role="region">
+          <div class="slide-container">
+            <div class="slide active" style="background-image: url('img/img1.webp'); background-position: center; background-size: cover; background-repeat: no-repeat; max-height: 600px;" role="group" aria-roledescription="slide" aria-label="Electrical Systems">
+              <div class="slide-caption">
+                <div class="caption-box">
+                  <h4>Electrical Systems</h4>
+                  <p>Advanced power distribution and control systems installation for commercial and industrial facilities.</p>
+                  <a href="services.html#electrical" class="btn btn-small">Learn More</a>
+                </div>
+              </div>
             </div>
-          </div>
-          
-          <div class="project-card">
-            <img src="https://via.placeholder.com/400x300/764ba2/ffffff?text=Fire+Safety+Systems" 
-                 alt="Fire Safety Systems" class="img-responsive zoom-img">
-            <div class="project-overlay">
-              <h4>Fire Detection</h4>
-              <p>Advanced fire detection and safety systems</p>
+            <div class="slide" style="background-image: url('img/fr_img.png'); background-position: center; background-size: cover; background-repeat: no-repeat; max-height: 600px;" role="group" aria-roledescription="slide" aria-label="Fire Safety Systems">
+              <div class="slide-caption">
+                <div class="caption-box">
+                  <h4>Fire Safety Systems</h4>
+                  <p>Comprehensive fire detection and suppression solutions ensuring safety compliance and peace of mind.</p>
+                  <a href="services.html#fire-safety" class="btn btn-small">Learn More</a>
+                </div>
+              </div>
             </div>
-          </div>
-          
-          <div class="project-card">
-            <img src="https://via.placeholder.com/400x300/f093fb/ffffff?text=Telecommunications" 
-                 alt="Telecommunications" class="img-responsive zoom-img">
-            <div class="project-overlay">
-              <h4>Telecommunications</h4>
-              <p>Modern communication and data solutions</p>
+            <div class="slide" style="background-image: url('img/tel.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; max-height: 600px;" role="group" aria-roledescription="slide" aria-label="Telecommunications">
+              <div class="slide-caption">
+                <div class="caption-box">
+                  <h4>Telecommunications</h4>
+                  <p>Modern network infrastructure and communication systems designed for optimal connectivity.</p>
+                  <a href="services.html#telecom" class="btn btn-small">Learn More</a>
+                </div>
+              </div>
             </div>
-          </div>
-          
-          
-          <div class="project-card">
-            <img src="https://via.placeholder.com/400x300/43e97b/ffffff?text=Power+Quality" 
-                 alt="Power Quality" class="img-responsive zoom-img">
-            <div class="project-overlay">
-              <h4>Power Quality</h4>
-              <p>Power auditing and management solutions</p>
-            </div>
-          </div>
-          
-          <div class="project-card">
-            <img src="https://via.placeholder.com/400x300/38f9d7/ffffff?text=Maintenance" 
-                 alt="Maintenance Services" class="img-responsive zoom-img">
-            <div class="project-overlay">
-              <h4>Maintenance</h4>
-              <p>Comprehensive maintenance and support services</p>
+
+            <!-- Navigation buttons -->
+            <button class="prev-slide" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+            <button class="next-slide" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+
+            <!-- Indicators -->
+            <div class="slide-indicators" role="tablist" aria-label="Slide indicators">
+              <span class="indicator active" role="tab" aria-selected="true" aria-label="Slide 1"></span>
+              <span class="indicator" role="tab" aria-selected="false" aria-label="Slide 2"></span>
+              <span class="indicator" role="tab" aria-selected="false" aria-label="Slide 3"></span>
             </div>
           </div>
         </div>
@@ -276,5 +410,60 @@
   <!-- Scripts -->
   <script src="js/custom.js"></script>
   <script src="js/navbar.js"></script>
+  <script>
+  // Project slideshow functionality (scoped to the project-slideshow only)
+  document.addEventListener('DOMContentLoaded', function() {
+    const slideshow = document.querySelector('.project-slideshow');
+    if (!slideshow) return;
+
+    const slides = slideshow.querySelectorAll('.slide');
+    const indicators = slideshow.querySelectorAll('.indicator');
+    const prevBtn = slideshow.querySelector('.prev-slide');
+    const nextBtn = slideshow.querySelector('.next-slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      indicators.forEach((indicator, i) => {
+        indicator.classList.toggle('active', i === index);
+        indicator.setAttribute('aria-selected', i === index ? 'true' : 'false');
+      });
+      slides[index].classList.add('active');
+      currentSlide = index;
+    }
+
+    if (prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', function() {
+        const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(prevIndex);
+      });
+
+      nextBtn.addEventListener('click', function() {
+        const nextIndex = (currentSlide + 1) % slides.length;
+        showSlide(nextIndex);
+      });
+    }
+
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', function() {
+        showSlide(index);
+      });
+    });
+
+    // Auto-advance slideshow with pause on hover
+    let autoTimer = setInterval(() => {
+      const nextIndex = (currentSlide + 1) % slides.length;
+      showSlide(nextIndex);
+    }, 5000);
+
+    slideshow.addEventListener('mouseenter', () => clearInterval(autoTimer));
+    slideshow.addEventListener('mouseleave', () => {
+      autoTimer = setInterval(() => {
+        const nextIndex = (currentSlide + 1) % slides.length;
+        showSlide(nextIndex);
+      }, 5000);
+    });
+  });
+  </script>
 </body>
 </html>

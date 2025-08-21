@@ -12,6 +12,62 @@
   <link href="css/modern-style.css" rel="stylesheet" type="text/css" media="all" />
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Cedarside Concept Limited",
+    "email": "contact@cedarsideltd.com",
+    "telephone": "+2348166373114",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Plot 61 Airport Road",
+      "addressLocality": "Warri",
+      "addressRegion": "Delta State",
+      "addressCountry": "NG"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: Service (summary) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Engineering & Technical Solutions",
+    "serviceType": "Electrical Systems, Fire Safety, Telecommunications",
+    "provider": {"@type": "Organization", "name": "Cedarside Concept Limited"},
+    "areaServed": {"@type": "Country", "name": "Nigeria"}
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cedarsideltd.com/"},
+      {"@type": "ListItem", "position": 2, "name": "About", "item": "https://www.cedarsideltd.com/about.html"}
+    ]
+  }
+  </script>
+  
+  <!-- Canonical & Social Meta -->
+  <link rel="canonical" href="https://www.cedarsideltd.com/about.html" />
+  <meta property="og:title" content="Cedarside Concept Limited | About Us" />
+  <meta property="og:description" content="Discover our journey of engineering excellence and innovation at Cedarside Concept Limited." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.cedarsideltd.com/about.html" />
+  <meta property="og:image" content="https://www.cedarsideltd.com/img/hear2.png" />
+  <meta property="og:site_name" content="Cedarside Concept Limited" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cedarside Concept Limited | About Us" />
+  <meta name="twitter:description" content="Discover our journey of engineering excellence and innovation at Cedarside Concept Limited." />
+  <meta name="twitter:image" content="https://www.cedarsideltd.com/img/hear2.png" />
 </head>
 <body>
   <script>document.documentElement.classList.add('js');</script>
@@ -38,8 +94,8 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="banner" style="position: relative; width: 100%; height: 450px; background: url('img/hear3.png') center center / cover no-repeat;">
-    <div class="hero-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-align: center; width: 100%;">
+  <section class="banner">
+    <div class="hero-content">
       <h1>About Us</h1>
       <p>Discover our journey of engineering excellence and innovation</p>
     </div>
@@ -112,24 +168,24 @@
     </section>
 
     <!-- Mission & Vision Section -->
-    <section class="section" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+    <section class="section about-mission">
       <div class="container">
         <div class="grid grid-2">
           <div class="card">
             <div class="text-center mb-3">
-              <i class="fas fa-bullseye" style="font-size: 3rem; color: #667eea;"></i>
+              <i class="fas fa-bullseye about-icon"></i>
             </div>
             <h3 class="text-center">Our Mission</h3>
-            <p class="text-center" style="font-size: 1.1rem; font-weight: 500; color: #2c3e50;">
+            <p class="text-center about-mission-blurb">
               Our mission is to deliver technology-driven engineering solutions that consistently exceed client expectations, ensuring safety, quality, and efficiency in every project.
             </p>
           </div>
           <div class="card">
             <div class="text-center mb-3">
-              <i class="fas fa-eye" style="font-size: 3rem; color: #667eea;"></i>
+              <i class="fas fa-eye about-icon"></i>
             </div>
             <h3 class="text-center">Our Vision</h3>
-            <p class="text-center" style="font-size: 1.1rem; font-weight: 500; color: #2c3e50;">
+            <p class="text-center about-mission-blurb">
               We aspire to be the premier engineering solutions provider, recognized for professional standards, innovative practices, and creating lasting value for all stakeholders.
             </p>
           </div>
@@ -137,67 +193,114 @@
       </div>
     </section>
 
-    <!-- Milestones Timeline Section -->
-    <section class="section timeline">
+    <!-- Highlights & Outcomes Section -->
+    <section class="section">
       <div class="container">
-        <h2 class="text-center mb-4">Our Journey</h2>
-        <ul class="timeline-list">
-          <li>
-            <div class="timeline-content">
-              <h4>Founded</h4>
-              <span class="timeline-date">2010</span>
-              <p>Cedarside Concept Limited was established with a vision to introduce innovative engineering solutions across Nigeria.</p>
+        <h2 class="text-center mb-2">Company Highlights & Outcomes</h2>
+        <p class="text-center text-sm mb-4" style="color:#4b5563; max-width:820px; margin:0 auto;">
+          A snapshot of programs and measurable results we deliver across sectors—focused on uptime, reliability,
+          safety compliance, and loss reduction.
+        </p>
+        <div class="grid grid-3">
+          <div class="card">
+            <h4>Banking Reliability Programs</h4>
+            <p>Designed and executed branch reliability and data room power schemes for financial institutions.</p>
+            <ul class="feature-list">
+              <li>UPS/ATS upgrades across multi-branch networks</li>
+              <li>Harmonics mitigation and PQ improvement</li>
+              <li>Remote monitoring rollout for critical sites</li>
+            </ul>
+            <div class="mt-2">
+              <span class="kpi-badge">≥99.95% uptime</span>
+              <span class="kpi-badge">Fewer outages</span>
             </div>
-          </li>
-          <li>
-            <div class="timeline-content">
-              <h4>First Major Project</h4>
-              <span class="timeline-date">2012</span>
-              <p>Completed a landmark power distribution upgrade for a leading manufacturing plant.</p>
+            <div class="text-center mt-3">
+              <a class="btn btn-outline btn-small" href="banks.html">See Bank Solutions</a>
             </div>
-          </li>
-          <li>
-            <div class="timeline-content">
-              <h4>Global Expansion</h4>
-              <span class="timeline-date">2018</span>
-              <p>Expanded our services internationally, partnering with clients in healthcare, oil & gas, and commercial industries.</p>
+          </div>
+
+          <div class="card">
+            <h4>DisCo Network Performance</h4>
+            <p>Programmatic loss reduction and reliability improvement with targeted field interventions.</p>
+            <ul class="feature-list">
+              <li>Feeder–DT–Customer metering pilots</li>
+              <li>Protection coordination and DA initiatives</li>
+              <li>Feeder rehab and phase balancing</li>
+            </ul>
+            <div class="mt-2">
+              <span class="kpi-badge">SAIDI ↓</span>
+              <span class="kpi-badge">ATC&C ↓</span>
             </div>
-          </li>
-          <li>
-            <div class="timeline-content">
-              <h4>Innovation Award</h4>
-              <span class="timeline-date">2023</span>
-              <p>Honored with the National Engineering Innovation Award for our advanced fire detection and integration solutions.</p>
+            <div class="text-center mt-3">
+              <a class="btn btn-outline btn-small" href="discos.html">See DisCo Solutions</a>
             </div>
-          </li>
-        </ul>
+          </div>
+
+          <div class="card">
+            <h4>Safety & Compliance</h4>
+            <p>ISO-aligned processes and field safety programs embedded across all projects.</p>
+            <ul class="feature-list">
+              <li>Zero-LTI culture with routine toolbox talks</li>
+              <li>QA/QC checklists and commissioning protocols</li>
+              <li>Documentation and client training</li>
+            </ul>
+            <div class="mt-2">
+              <span class="kpi-badge">Zero LTI</span>
+              <span class="kpi-badge">Audits passed</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Team Profiles Section -->
+    <!-- Team Gallery Section (replaces profiles) -->
     <section class="section">
       <div class="container">
-        <h2 class="text-center mb-4">Our Professional Team</h2>
-        <div class="grid grid-4">
-          <div class="team-profile">
-            <i class="fas fa-user-circle default-profile-icon" aria-hidden="true"></i>
-            <h4>John Smith</h4>
-            <p>Managing Director</p>
-          </div>
-          <div class="team-profile">
-            <i class="fas fa-user-circle default-profile-icon" aria-hidden="true"></i>
-            <h4>Alice Davis</h4>
-            <p>Technical Lead</p>
-          </div>
-          <div class="team-profile">
-            <i class="fas fa-user-circle default-profile-icon" aria-hidden="true"></i>
-            <h4>Michael King</h4>
-            <p>Project Manager</p>
-          </div>
-          <div class="team-profile">
-            <i class="fas fa-user-circle default-profile-icon" aria-hidden="true"></i>
-            <h4>Laura Scott</h4>
-            <p>Quality Assurance</p>
+        <div class="text-center mb-4">
+          <h2>Team Gallery & Recent Projects</h2>
+          <p class="lead">A glimpse of our engineers at work across electrical, fire safety and telecom projects.</p>
+        </div>
+
+        <div class="project-slideshow" aria-label="Project slideshow" role="region">
+          <div class="slide-container">
+            <div class="slide active" style="background-image: url('img/img1.webp'); background-position: center; background-size: cover; background-repeat: no-repeat; max-height: 600px;" role="group" aria-roledescription="slide" aria-label="Electrical Systems">
+              <div class="slide-caption">
+                <div class="caption-box">
+                  <h4>Electrical Systems</h4>
+                  <p>Advanced power distribution and control systems installation for commercial and industrial facilities.</p>
+                  <a href="services.html#electrical" class="btn btn-small">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="slide" style="background-image: url('img/fr_img.png'); background-position: center; background-size: cover; background-repeat: no-repeat; max-height: 600px;" role="group" aria-roledescription="slide" aria-label="Fire Safety Systems">
+              <div class="slide-caption">
+                <div class="caption-box">
+                  <h4>Fire Safety Systems</h4>
+                  <p>Comprehensive fire detection and suppression solutions ensuring safety compliance and peace of mind.</p>
+                  <a href="services.html#fire-safety" class="btn btn-small">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="slide" style="background-image: url('img/tel.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; max-height: 600px;" role="group" aria-roledescription="slide" aria-label="Telecommunications">
+              <div class="slide-caption">
+                <div class="caption-box">
+                  <h4>Telecommunications</h4>
+                  <p>Modern network infrastructure and communication systems designed for optimal connectivity.</p>
+                  <a href="services.html#telecom" class="btn btn-small">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <button class="prev-slide" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+            <button class="next-slide" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+
+            <!-- Indicators -->
+            <div class="slide-indicators" role="tablist" aria-label="Slide indicators">
+              <span class="indicator active" role="tab" aria-selected="true" aria-label="Slide 1"></span>
+              <span class="indicator" role="tab" aria-selected="false" aria-label="Slide 2"></span>
+              <span class="indicator" role="tab" aria-selected="false" aria-label="Slide 3"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -275,5 +378,55 @@
   <!-- Scripts -->
   <script src="js/custom.js"></script>
   <script src="js/navbar.js"></script>
+  <script>
+  // Scoped Project slideshow for About page
+  document.addEventListener('DOMContentLoaded', function() {
+    const slideshow = document.querySelector('.project-slideshow');
+    if (!slideshow) return;
+
+    const slides = slideshow.querySelectorAll('.slide');
+    const indicators = slideshow.querySelectorAll('.indicator');
+    const prevBtn = slideshow.querySelector('.prev-slide');
+    const nextBtn = slideshow.querySelector('.next-slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      indicators.forEach((indicator, i) => {
+        indicator.classList.toggle('active', i === index);
+        indicator.setAttribute('aria-selected', i === index ? 'true' : 'false');
+      });
+      slides[index].classList.add('active');
+      currentSlide = index;
+    }
+
+    prevBtn.addEventListener('click', function() {
+      const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(prevIndex);
+    });
+
+    nextBtn.addEventListener('click', function() {
+      const nextIndex = (currentSlide + 1) % slides.length;
+      showSlide(nextIndex);
+    });
+
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', function() { showSlide(index); });
+    });
+
+    let autoTimer = setInterval(() => {
+      const nextIndex = (currentSlide + 1) % slides.length;
+      showSlide(nextIndex);
+    }, 5000);
+
+    slideshow.addEventListener('mouseenter', () => clearInterval(autoTimer));
+    slideshow.addEventListener('mouseleave', () => {
+      autoTimer = setInterval(() => {
+        const nextIndex = (currentSlide + 1) % slides.length;
+        showSlide(nextIndex);
+      }, 5000);
+    });
+  });
+  </script>
 </body>
 </html>
